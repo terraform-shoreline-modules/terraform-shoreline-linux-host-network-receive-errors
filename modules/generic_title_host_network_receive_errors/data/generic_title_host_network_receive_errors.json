@@ -7,15 +7,15 @@
       "value": ""
     },
     {
+      "name": "HOSTNAME",
+      "value": ""
+    },
+    {
       "name": "OFFENDING_IP_ADDRESS",
       "value": ""
     },
     {
       "name": "INTERFACE_NAME",
-      "value": ""
-    },
-    {
-      "name": "HOSTNAME",
       "value": ""
     },
     {
@@ -228,7 +228,7 @@
       "name": "cell_33",
       "type": "OP_LANG",
       "enabled": true,
-      "content": "host | host_name=$HOST_NAME | invoke_network_diagnosis($INTERFACE_NAME)"
+      "content": "host | host_name=$HOST_NAME | invoke_net_traffic_errors($INTERFACE_NAME)"
     },
     {
       "name": "cell_34",
@@ -240,7 +240,7 @@
       "name": "cell_35",
       "type": "OP_LANG",
       "enabled": true,
-      "content": "host | host_name=$HOST_NAME | invoke_network_capture_and_block($OUTPUT_FILE, $OFFENDING_IP_ADDRESS, $INTERFACE_NAME)"
+      "content": "host | host_name=$HOST_NAME | invoke_network_trace_and_block($OUTPUT_FILE, $OFFENDING_IP_ADDRESS, $INTERFACE_NAME)"
     }
   ]
 }
