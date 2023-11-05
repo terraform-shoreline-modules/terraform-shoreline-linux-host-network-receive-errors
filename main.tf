@@ -14,8 +14,8 @@ provider "shoreline" {
   debug = true
 }
 
-module "generic_title_host_network_receive_errors" {
-  source    = "./modules/generic_title_host_network_receive_errors"
+module "host_network_receive_errors" {
+  source    = "./modules/host_network_receive_errors"
 
   providers = {
     shoreline = shoreline
